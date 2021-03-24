@@ -1,0 +1,69 @@
+:root {
+    --black: #202020;
+    --dkGrey: #3f3f3f; 
+    --medGrey: #707070;
+    --eggYellow: #FFDF6C;
+  }
+  *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    padding: 4rem;
+    background-color: var(--dkGrey);
+    
+}
+.col-all{
+    width: 100%;
+}
+.col2{
+    width: 20%;
+}
+.col6{
+    width: 60%;
+}
+.journalEntry{
+    background-color: white;
+}
+.journalEntry_fieldset{
+    display: flex;
+    flex-direction: column;
+}
+.pastEntry{
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    background-color: var(--eggYellow);
+    overflow: hidden;
+}
+p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+}
+.journalEntry_fieldset{
+background-color: var(--eggYellow);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.h1Header{
+    width:40%;
+    font-size: 3rem;
+}
+.todaysDate{
+    font-size: 1.6rem;
+}
+hr{
+    background-color: var(--eggYellow);
+    color: var(--eggYellow);
+}
