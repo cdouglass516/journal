@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,41 +12,39 @@
 <body>
     <header>
         <div class="header">
-            <img src="img/logo_med.png">
-            <div class="h1Header">
-                <h1>My Journal</h1>
-                <p>by Chris Douglass</p>
-            </div>
-            <div class="otherInfo">
-                <span class="todaysDate"></span>
-            </div>
-
+            <img src="./img/header.png" alt="Journal of Chris Douglass" class="header_img">
         </div>
+        <span class="todaysDate"></span>
     </header>
-    <form id="formJournal">
-        <fieldset class="journalEntry_fieldset">
-            <h4>Journal Entry</h4>
-            <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-            <label for="conceptsCovered">Concepts covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
-            <label for="journalEntry">Journal Entry</label>
-            <textarea type="text" id="journalEntry" name="JournalEntry" rows="4" cols="50">
+    <div class="content">
+        <div class="newEntry">
+            <form id="formJournal">
+                <fieldset class="journalEntry_fieldset">
+                    <h4>Journal Entry</h4>
+                    <label for="journalDate">Date of Entry</label>
+                    <input type="date" name="journalDate" id="journalDate">
+                    <label for="conceptsCovered">Concepts covered</label>
+                    <input type="text" name="conceptsCovered" id="conceptsCovered">
+                    <label for="journalEntry">Journal Entry</label>
+                    <textarea type="text" id="journalEntry" name="JournalEntry" rows="4" cols="50">
 
                 </textarea>
-            <label for="mood">Mood for the day</label>
-            <select name="mood" id="mood">
-                <option value="igotit">I really understood today</option>
-                <option value="Itsclear">This is clear to me</option>
-                <option value="notsure">not sure</option>
-                <option value="fuzzy">fuzzy</option>
-                <option value="wtf">WTF</option>
-            </select>
-            <input type="submit" value="Submit" id="journalSubmit">
-        </fieldset>
-    </form>
-    <div id="entryLog" class="pastEntry"></div>
-    
+                    <label for="mood">Mood for the day</label>
+                    <select name="mood" id="mood">
+                        <option value="igotit">I really understood today</option>
+                        <option value="Itsclear">This is clear to me</option>
+                        <option value="notsure">not sure</option>
+                        <option value="fuzzy">fuzzy</option>
+                        <option value="wtf">WTF</option>
+                    </select>
+                    <input type="submit" value="Submit" id="journalSubmit">
+                </fieldset>
+            </form>
+            <img src='./img/writing.jpeg'>
+        </div>
+        <div id="entryLog" class="pastEntry"></div>
+    </div>
 </body>
-<script type = "module"; src = "./js/main.js"; ></script>
+<script type="module" ; src="./js/main.js" ;></script>
+
 </html>

@@ -4,6 +4,7 @@
  */
 export const JournalEntryComponent = (entry) => {
     return `
+    <div class="pastJournalEntries">
         <hr>
         <section id="entry--${entry.id}" class="journalEntry">
             <p>${entry.date}-${entry.entry}</p>
@@ -11,5 +12,6 @@ export const JournalEntryComponent = (entry) => {
             <img id="edit${entry.id}" src="../img/editsm.png" alt="delete post" width="25" height="25">
         </section>
         <hr>
+    </div>
     `
 }

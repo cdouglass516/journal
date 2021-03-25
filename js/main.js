@@ -28,4 +28,14 @@ document.getElementById('journalSubmit').addEventListener('mouseover', (e) => {
 applicationElement.addEventListener("click", event => {
   console.log(event.target.id );
 });
+// let arr = [,null,8,4,2,9,"","a",0,NaN,undefined];
+// let newArray = [];
+// let falseyArray = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i]){newArray.push(arr[i]);} else {falseyArray.push(arr[i])}
+// }
+// console.log(newArray);
+// console.log(falseyArray);
+
+
 
